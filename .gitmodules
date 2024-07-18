@@ -1,0 +1,78 @@
+[submodule "crates/allocator"]
+	path = crates/allocator
+	url = https://github.com/arceos-org/allocator.git
+[submodule "crates/arm_gicv2"]
+	path = crates/arm_gicv2
+	url = https://github.com/arceos-org/arm_gicv2.git
+[submodule "crates/arm_pl011"]
+	path = crates/arm_pl011
+	url = https://github.com/arceos-org/arm_pl011.git
+[submodule "crates/arm_pl031"]
+	path = crates/arm_pl031
+	url = https://github.com/arceos-org/arm_pl031.git
+[submodule "crates/axdriver_crates"]
+	path = crates/axdriver_crates
+	url = https://github.com/arceos-org/axdriver_crates.git
+[submodule "crates/axerrno"]
+	path = crates/axerrno
+	url = https://github.com/arceos-org/axerrno.git
+[submodule "crates/axfs_crates"]
+	path = crates/axfs_crates
+	url = https://github.com/arceos-org/axfs_crates.git
+[submodule "crates/axio"]
+	path = crates/axio
+	url = https://github.com/arceos-org/axio.git
+[submodule "crates/cap_access"]
+	path = crates/cap_access
+	url = https://github.com/arceos-org/cap_access.git
+[submodule "crates/crate_interface"]
+	path = crates/crate_interface
+	url = https://github.com/arceos-org/crate_interface.git
+[submodule "crates/dw_apb_uart"]
+	path = crates/dw_apb_uart
+	url = https://github.com/arceos-org/dw_apb_uart.git
+[submodule "crates/flatten_objects"]
+	path = crates/flatten_objects
+	url = https://github.com/arceos-org/flatten_objects.git
+[submodule "crates/handler_table"]
+	path = crates/handler_table
+	url = https://github.com/arceos-org/handler_table.git
+[submodule "crates/int_ratio"]
+	path = crates/int_ratio
+	url = https://github.com/arceos-org/int_ratio.git
+[submodule "crates/kernel_guard"]
+	path = crates/kernel_guard
+	url = https://github.com/arceos-org/kernel_guard.git
+[submodule "crates/kspin"]
+	path = crates/kspin
+	url = https://github.com/arceos-org/kspin.git
+[submodule "crates/lazyinit"]
+	path = crates/lazyinit
+	url = https://github.com/arceos-org/lazyinit.git
+[submodule "crates/memory_addr"]
+	path = crates/memory_addr
+	url = https://github.com/arceos-org/memory_addr.git
+[submodule "crates/page_table_multiarch"]
+	path = crates/page_table_multiarch
+	url = https://github.com/arceos-org/page_table_multiarch.git
+[submodule "crates/percpu"]
+	path = crates/percpu
+	url = https://github.com/arceos-org/percpu.git
+[submodule "crates/riscv_goldfish"]
+	path = crates/riscv_goldfish
+	url = https://github.com/arceos-org/riscv_goldfish.git
+[submodule "crates/scheduler"]
+	path = crates/scheduler
+	url = https://github.com/arceos-org/scheduler.git
+[submodule "crates/slab_allocator"]
+	path = crates/slab_allocator
+	url = https://github.com/arceos-org/slab_allocator.git
+[submodule "crates/timer_list"]
+	path = crates/timer_list
+	url = https://github.com/arceos-org/timer_list.git
+[submodule "crates/tuple_for_each"]
+	path = crates/tuple_for_each
+	url = https://github.com/arceos-org/tuple_for_each.git
+[submodule "crates/x86_rtc"]
+	path = crates/x86_rtc
+	url = https://github.com/arceos-org/x86_rtc.git
