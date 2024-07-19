@@ -26,6 +26,7 @@ CRATES=(
     "kernel_guard"
     "kspin"
     "lazyinit"
+    "linked_list"
     "memory_addr"
     "page_table_entry"
     "page_table_multiarch"
