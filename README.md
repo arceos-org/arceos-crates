@@ -5,7 +5,7 @@ Reusable crates list for [ArceOS](https://github.com/arceos-org/arceos).
 ## Crate List
 
 | Crate | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[crates.io](crates.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Documentation | Description |
-|-|:-:|:-:|-|
+|----|:--:|:--:|----|
 | [allocator](https://github.com/arceos-org/allocator) | N/A | [![Docs.rs](https://img.shields.io/badge/docs-pages-green)](https://arceos-org.github.io/allocator) | Various allocator algorithms in a unified interface. |
 | [arm_gicv2](https://github.com/arceos-org/arm_gicv2) | [![Crates.io](https://img.shields.io/crates/v/arm_gicv2)](https://crates.io/crates/arm_gicv2) | [![Docs.rs](https://docs.rs/arm_gicv2/badge.svg)](https://docs.rs/arm_gicv2) | ARM Generic Interrupt Controller version 2 (GICv2) register definitions and basic operations. |
 | [arm_pl011](https://github.com/arceos-org/arm_pl011) | [![Crates.io](https://img.shields.io/crates/v/arm_pl011)](https://crates.io/crates/arm_pl011) | [![Docs.rs](https://docs.rs/arm_pl011/badge.svg)](https://docs.rs/arm_pl011) | ARM Uart pl011 register definitions and basic operations. |
@@ -32,6 +32,7 @@ Reusable crates list for [ArceOS](https://github.com/arceos-org/arceos).
 | [lazyinit](https://github.com/arceos-org/lazyinit) | [![Crates.io](https://img.shields.io/crates/v/lazyinit)](https://crates.io/crates/lazyinit) | [![Docs.rs](https://docs.rs/lazyinit/badge.svg)](https://docs.rs/lazyinit) | Initialize a static value lazily. |
 | [linked_list](https://github.com/arceos-org/linked_list) | N/A | [![Docs.rs](https://img.shields.io/badge/docs-pages-green)](https://arceos-org.github.io/linked_list) | Linked lists that supports arbitrary removal in constant time. |
 | [memory_addr](https://github.com/arceos-org/memory_addr) | [![Crates.io](https://img.shields.io/crates/v/memory_addr)](https://crates.io/crates/memory_addr) | [![Docs.rs](https://docs.rs/memory_addr/badge.svg)](https://docs.rs/memory_addr) | Wrappers and helper functions for physical and virtual addresses. |
+| [memory_set](https://github.com/arceos-org/memory_set) | [![Crates.io](https://img.shields.io/crates/v/memory_set)](https://crates.io/crates/memory_set) | [![Docs.rs](https://docs.rs/memory_set/badge.svg)](https://docs.rs/memory_set) | Data structures and operations for managing memory mappings. |
 | [page_table_entry](https://github.com/arceos-org/page_table_multiarch/tree/main/page_table_entry) | [![Crates.io](https://img.shields.io/crates/v/page_table_entry)](https://crates.io/crates/page_table_entry) | [![Docs.rs](https://docs.rs/page_table_entry/badge.svg)](https://docs.rs/page_table_entry) | Page table entry definition for various hardware architectures. |
 | [page_table_multiarch](https://github.com/arceos-org/page_table_multiarch/tree/main/page_table_multiarch) | [![Crates.io](https://img.shields.io/crates/v/page_table_multiarch)](https://crates.io/crates/page_table_multiarch) | [![Docs.rs](https://docs.rs/page_table_multiarch/badge.svg)](https://docs.rs/page_table_multiarch) | Generic page table structures for various hardware architectures. |
 | [percpu](https://github.com/arceos-org/percpu/tree/main/percpu) | [![Crates.io](https://img.shields.io/crates/v/percpu)](https://crates.io/crates/percpu) | [![Docs.rs](https://docs.rs/percpu/badge.svg)](https://docs.rs/percpu) | Define and access per-CPU data structures. |

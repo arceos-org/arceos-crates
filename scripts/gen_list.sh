@@ -28,6 +28,7 @@ CRATES=(
     "lazyinit"
     "linked_list"
     "memory_addr"
+    "memory_set"
     "page_table_entry"
     "page_table_multiarch"
     "percpu"

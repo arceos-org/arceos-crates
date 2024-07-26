@@ -28,6 +28,7 @@ REPOS=(
     "lazyinit"
     "linked_list"
     "memory_addr"
+    "memory_set"
     "page_table_multiarch"
     "percpu"
     "riscv_goldfish"
