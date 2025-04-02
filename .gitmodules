@@ -22,12 +22,21 @@
 [submodule "crates/axio"]
 	path = crates/axio
 	url = https://github.com/arceos-org/axio.git
+[submodule "crates/axmm_crates"]
+	path = crates/axmm_crates
+	url = https://github.com/arceos-org/axmm_crates.git
 [submodule "crates/cap_access"]
 	path = crates/cap_access
 	url = https://github.com/arceos-org/cap_access.git
+[submodule "crates/cpumask"]
+	path = crates/cpumask
+	url = https://github.com/arceos-org/cpumask.git
 [submodule "crates/crate_interface"]
 	path = crates/crate_interface
 	url = https://github.com/arceos-org/crate_interface.git
+[submodule "crates/ctor_bare"]
+	path = crates/ctor_bare
+	url = https://github.com/arceos-org/ctor_bare.git
 [submodule "crates/dw_apb_uart"]
 	path = crates/dw_apb_uart
 	url = https://github.com/arceos-org/dw_apb_uart.git
@@ -52,12 +61,6 @@
 [submodule "crates/linked_list"]
 	path = crates/linked_list
 	url = https://github.com/arceos-org/linked_list.git
-[submodule "crates/memory_addr"]
-	path = crates/memory_addr
-	url = https://github.com/arceos-org/memory_addr.git
-[submodule "crates/memory_set"]
-	path = crates/memory_set
-	url = https://github.com/arceos-org/memory_set.git
 [submodule "crates/page_table_multiarch"]
 	path = crates/page_table_multiarch
 	url = https://github.com/arceos-org/page_table_multiarch.git
@@ -67,6 +70,9 @@
 [submodule "crates/riscv_goldfish"]
 	path = crates/riscv_goldfish
 	url = https://github.com/arceos-org/riscv_goldfish.git
+[submodule "crates/riscv_plic"]
+	path = crates/riscv_plic
+	url = https://github.com/arceos-org/riscv_plic.git
 [submodule "crates/scheduler"]
 	path = crates/scheduler
 	url = https://github.com/arceos-org/scheduler.git

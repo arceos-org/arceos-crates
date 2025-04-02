@@ -18,7 +18,10 @@ CRATES=(
     "axfs_vfs"
     "axio"
     "cap_access"
+    "cpumask"
     "crate_interface"
+    "ctor_bare"
+    "ctor_bare_macros"
     "dw_apb_uart"
     "flatten_objects"
     "handler_table"
@@ -34,6 +37,7 @@ CRATES=(
     "percpu"
     "percpu_macros"
     "riscv_goldfish"
+    "riscv_plic"
     "scheduler"
     "slab_allocator"
     "timer_list"
@@ -47,17 +51,23 @@ echo '|----|:--:|:--:|----|'
 
 for c in ${CRATES[@]};
 do
-    if [[ $c == axdriver* ]]; then
+    if [[ $c == axdriver_* ]]; then
         repo="axdriver_crates"
         subcrate=1
-    elif [[ $c == axfs* ]]; then
+    elif [[ $c == axfs_* ]]; then
         repo="axfs_crates"
         subcrate=1
-    elif [[ $c == page_table* ]]; then
+    elif [[ $c == memory_* ]]; then
+        repo="axmm_crates"
+        subcrate=1
+    elif [[ $c == page_table_* ]]; then
         repo="page_table_multiarch"
         subcrate=1
     elif [[ $c == percpu* ]]; then
         repo="percpu"
+        subcrate=1
+    elif [[ $c == ctor_bare* ]]; then
+        repo="ctor_bare"
         subcrate=1
     else
         repo="$c"
