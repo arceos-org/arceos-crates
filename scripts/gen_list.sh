@@ -6,6 +6,9 @@ CRATES=(
     "arm_gicv2"
     "arm_pl011"
     "arm_pl031"
+    "axconfig-gen"
+    "axconfig-macros"
+    "axcpu"
     "axdriver_base"
     "axdriver_block"
     "axdriver_display"
@@ -17,6 +20,17 @@ CRATES=(
     "axfs_ramfs"
     "axfs_vfs"
     "axio"
+    "axplat"
+    "axplat-macros"
+    "axplat-aarch64-peripherals"
+    "axplat-aarch64-bsta1000b"
+    "axplat-aarch64-phytium-pi"
+    "axplat-aarch64-qemu-virt"
+    "axplat-aarch64-raspi"
+    "axplat-loongarch64-qemu-virt"
+    "axplat-riscv64-qemu-virt"
+    "axplat-x86-pc"
+    "axsched"
     "cap_access"
     "cpumask"
     "crate_interface"
@@ -29,7 +43,7 @@ CRATES=(
     "kernel_guard"
     "kspin"
     "lazyinit"
-    "linked_list"
+    "linked_list_r4l"
     "memory_addr"
     "memory_set"
     "page_table_entry"
@@ -38,7 +52,6 @@ CRATES=(
     "percpu_macros"
     "riscv_goldfish"
     "riscv_plic"
-    "scheduler"
     "slab_allocator"
     "timer_list"
     "tuple_for_each"
@@ -51,6 +64,8 @@ echo '|----|:--:|:--:|----|'
 
 for c in ${CRATES[@]};
 do
+    subcrate=0
+    platorm_crate=0
     if [[ $c == axdriver_* ]]; then
         repo="axdriver_crates"
         subcrate=1
@@ -60,6 +75,15 @@ do
     elif [[ $c == memory_* ]]; then
         repo="axmm_crates"
         subcrate=1
+    elif [[ $c == axconfig* ]]; then
+        repo="axconfig-gen"
+        subcrate=1
+    elif [[ $c == axplat* ]]; then
+        repo="axplat_crates"
+        subcrate=1
+        if [[ $c == axplat-* ]] && [[ $c != axplat-macros ]]; then
+            platorm_crate=1
+        fi
     elif [[ $c == page_table_* ]]; then
         repo="page_table_multiarch"
         subcrate=1
@@ -77,6 +101,9 @@ do
     if [[ $subcrate == 0 ]]; then
         url="$ROOT/$c"
         toml="crates/$repo/Cargo.toml"
+    elif [[ $platorm_crate == 1 ]]; then
+        url="$ROOT/$repo/tree/main/platforms/$c"
+        toml="crates/$repo/platforms/$c/Cargo.toml"
     else
         url="$ROOT/$repo/tree/main/$c"
         toml="crates/$repo/$c/Cargo.toml"

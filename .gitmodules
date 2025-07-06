@@ -10,6 +10,12 @@
 [submodule "crates/arm_pl031"]
 	path = crates/arm_pl031
 	url = https://github.com/arceos-org/arm_pl031.git
+[submodule "crates/axconfig-gen"]
+	path = crates/axconfig-gen
+	url = https://github.com/arceos-org/axconfig-gen.git
+[submodule "crates/axcpu"]
+	path = crates/axcpu
+	url = https://github.com/arceos-org/axcpu.git
 [submodule "crates/axdriver_crates"]
 	path = crates/axdriver_crates
 	url = https://github.com/arceos-org/axdriver_crates.git
@@ -25,6 +31,12 @@
 [submodule "crates/axmm_crates"]
 	path = crates/axmm_crates
 	url = https://github.com/arceos-org/axmm_crates.git
+[submodule "crates/axplat_crates"]
+	path = crates/axplat_crates
+	url = https://github.com/arceos-org/axplat_crates.git
+[submodule "crates/axsched"]
+	path = crates/axsched
+	url = https://github.com/arceos-org/axsched.git
 [submodule "crates/cap_access"]
 	path = crates/cap_access
 	url = https://github.com/arceos-org/cap_access.git
@@ -58,9 +70,9 @@
 [submodule "crates/lazyinit"]
 	path = crates/lazyinit
 	url = https://github.com/arceos-org/lazyinit.git
-[submodule "crates/linked_list"]
-	path = crates/linked_list
-	url = https://github.com/arceos-org/linked_list.git
+[submodule "crates/linked_list_r4l"]
+	path = crates/linked_list_r4l
+	url = https://github.com/arceos-org/linked_list_r4l.git
 [submodule "crates/page_table_multiarch"]
 	path = crates/page_table_multiarch
 	url = https://github.com/arceos-org/page_table_multiarch.git
@@ -73,9 +85,6 @@
 [submodule "crates/riscv_plic"]
 	path = crates/riscv_plic
 	url = https://github.com/arceos-org/riscv_plic.git
-[submodule "crates/scheduler"]
-	path = crates/scheduler
-	url = https://github.com/arceos-org/scheduler.git
 [submodule "crates/slab_allocator"]
 	path = crates/slab_allocator
 	url = https://github.com/arceos-org/slab_allocator.git
